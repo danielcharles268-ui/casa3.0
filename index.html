@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#59664a">
+  <title>Fransuilame & Samara | 27.12.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <audio id="backgroundMusic" loop><source src="musica.mp3" type="audio/mpeg"></audio>
+
+  <main id="envelopeScreen" class="cover-screen">
+    <div class="cover-orbit"></div>
+    <div class="cover-center">
+      <div class="cover-kicker">Convite de casamento</div>
+      <div class="cover-monogram">F<span>&amp;</span>S</div>
+      <div class="cover-names">Fransuilame  
+<i>&amp;</i> Samara</div>
+      <div class="cover-date">27 · 12 · 2026</div>
+      <button id="envelopeBtn" class="open-button"><span>abrir convite</span><b>↗</b></button>
+    </div>
+    <div class="cover-footer">Uma celebração para guardar no coração</div>
+  </main>
+
+  <div id="conviteContent" class="convite-content hidden">
+    <header class="site-header">
+      <div class="header-mark">F <span>&amp;</span> S</div>
+      <button class="music-button" type="button" aria-label="Ativar ou pausar música">♫</button>
+    </header>
+
+    <div class="convite-wrapper">
+      <section class="intro-block" id="inicio">
+        <p class="eyebrow">O nosso grande dia</p>
+        <h1>Fransuilame <em>&amp;</em> Samara</h1>
+        <p class="intro-subtitle">27 de dezembro de 2026 · 18 horas</p>
+      </section>
+
+      <section class="feature-photo">
+        <img src="fotos/foto1.jpg" alt="Fransuilame e Samara" class="feature-image">
+        <div class="photo-caption"><span>F</span><i>&amp;</i><span>S</span><small>para sempre</small></div>
+      </section>
+
+      <section class="quote-block">
+        <span class="quote-mark">“</span>
+        <p>O amor é a escolha de caminhar juntos, todos os dias.</p>
+        <div class="olive-divider">—</div>
+      </section>
+
+      <section class="info-panel" id="data">
+        <p class="eyebrow">Reserve esta data</p>
+        <div class="calendar-date"><strong>27</strong><div><span>DEZEMBRO</span><b>2026</b></div></div>
+        <div class="info-row"><span>DOMINGO</span><span>ÀS 18:00</span></div>
+        <div class="countdown-boxes">
+          <div><strong id="days">00</strong><small>dias</small></div>
+          <div><strong id="hours">00</strong><small>horas</small></div>
+          <div><strong id="minutes">00</strong><small>min</small></div>
+          <div><strong id="seconds">00</strong><small>seg</small></div>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="fotos">
+        <div class="section-title"><span>Momentos</span><small>01 — 03</small></div>
+        <div class="gallery-frame">
+          <div class="carousel-slide active"><img src="fotos/foto1.jpg" alt="Foto do casal" class="carousel-image"></div>
+          <div class="carousel-slide"><img src="fotos/foto2.jpg" alt="Foto do casal" class="carousel-image"></div>
+          <div class="carousel-slide"><img src="fotos/foto3.jpg" alt="Foto do casal" class="carousel-image"></div>
+          <div class="carousel-dots">
+            <button class="dot active" data-slide="0" aria-label="Foto 1"></button>
+            <button class="dot" data-slide="1" aria-label="Foto 2"></button>
+            <button class="dot" data-slide="2" aria-label="Foto 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="action-section" id="interacoes">
+        <p class="eyebrow">Para facilitar sua presença</p>
+        <div class="action-grid">
+          <a class="action-card" href="https://wa.me/5500000000000" target="_blank"><span>01</span><b>Confirmar presença</b><small>Fale com o noivo</small><i>↗</i></a>
+          <a class="action-card" href="https://wa.me/5500000000001" target="_blank"><span>02</span><b>Confirmar presença</b><small>Fale com a noiva</small><i>↗</i></a>
+          <a class="action-card" href="https://www.google.com/maps/search/?api=1&query=R.+Maurício+de+Nassau,+95,+Trindade,+PE,+56250-000" target="_blank"><span>03</span><b>Como chegar</b><small>Ver localização da festa</small><i>↗</i></a>
+          <button class="action-card gift-button" type="button"><span>04</span><b>Lista de presentes</b><small>Uma lembrança especial</small><i>↗</i></button>
+        </div>
+      </section>
+
+      <footer class="site-footer"><div class="footer-mark">F <span>&amp;</span> S</div><p>Esperamos você.</p><small>Fransuilame &amp; Samara · 27.12.2026</small></footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
